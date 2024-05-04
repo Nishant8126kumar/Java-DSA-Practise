@@ -1,9 +1,14 @@
 package com.practise.Testcodeapplication.desingPattern;
 
 import lombok.extern.slf4j.Slf4j;
+interface XData
+{
+   static int x=0;
+}
 
 @Slf4j
 public class SingleTonDesignPattern {
+
 
     private static SingleTonDesignPattern singleTonDesignPattern = null;
 
@@ -23,6 +28,7 @@ public class SingleTonDesignPattern {
         SingleTonDesignPattern instance1 = SingleTonDesignPattern.getInstance();
         SingleTonDesignPattern instance2 = SingleTonDesignPattern.getInstance();
         SingleTonDesignPattern instance3 = SingleTonDesignPattern.getInstance();
+
 
 
     }
