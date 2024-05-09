@@ -10,13 +10,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee {
-
-    private String name;
-    private String contactNumber;
-    private String address;
-    private String mobileNo;
-    private String emailId;
-    private Double salary;
+public class Course {
+    private String courseName;
+    private String courseDuration;
+    private Double courseFees;
 }
-
