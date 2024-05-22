@@ -24,6 +24,9 @@ class TestDemo extends AbstractExample {
         int sumValue = AbstractExample.twoValueSum(10, 20);
         log.info("Sum values :" + sumValue);
         log.info("X values :"+x);
+        log.info("Abstract class x:"+AbstractExample.x);
+        AbstractExample.x=20;
+        log.info("Abstract class x:"+AbstractExample.x);
 
 
     }

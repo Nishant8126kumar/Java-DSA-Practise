@@ -1,4 +1,4 @@
-package com.practise.Testcodeapplication.desingPattern;
+package com.practise.Testcodeapplication.desingPattern.CreationalPattern;
 
 import lombok.extern.slf4j.Slf4j;
 interface XData
