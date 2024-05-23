@@ -15,7 +15,7 @@ abstract class Student {
     public void showDetails() {
         System.out.println("Hello from show method .");
     }
-   
+
 
 }
 
