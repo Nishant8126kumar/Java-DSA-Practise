@@ -20,10 +20,10 @@ abstract class Student {
 }
 
 @Slf4j
-public class ContractorInAbstractClass extends Student {
+public class ConstructorInAbstractClass extends Student {
     String studentRollNo;
 
-    public ContractorInAbstractClass(String studentName, String studentRollNo) {
+    public ConstructorInAbstractClass(String studentName, String studentRollNo) {
         super(studentName);
         this.studentRollNo = studentRollNo;
     }
@@ -35,7 +35,7 @@ public class ContractorInAbstractClass extends Student {
 
     public static void main(String[] args) {
 
-        ContractorInAbstractClass obj = new ContractorInAbstractClass("Nishant", "2110");
+        ConstructorInAbstractClass obj = new ConstructorInAbstractClass("Nishant", "2110");
         log.info("Student name :" + obj.studentName);
         log.info("Student RollNo :" + obj.studentRollNo);
 
