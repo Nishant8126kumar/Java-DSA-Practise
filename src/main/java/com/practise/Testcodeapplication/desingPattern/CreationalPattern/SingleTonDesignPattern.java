@@ -14,8 +14,9 @@ public class SingleTonDesignPattern {
 
     public static SingleTonDesignPattern getInstance() {
 
-        if (singleTonDesignPattern == null)
+        if (singleTonDesignPattern == null) {
             singleTonDesignPattern = new SingleTonDesignPattern();
+        }
         return singleTonDesignPattern;
     }
 

@@ -18,5 +18,19 @@ public class Employee {
     private String mobileNo;
     private String emailId;
     private Double salary;
+    private String department;
+    private String gender;
+
+    public Employee(String name, String department, Double salary) {
+        this.name = name;
+        this.department = department;
+        this.salary = salary;
+    }
+    public Employee(String name, String department, Double salary,String gender) {
+        this.name = name;
+        this.department = department;
+        this.salary = salary;
+        this.gender=gender;
+    }
 }
 

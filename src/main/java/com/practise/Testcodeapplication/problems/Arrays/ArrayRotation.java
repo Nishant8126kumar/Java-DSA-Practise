@@ -1,9 +1,12 @@
 package com.practise.Testcodeapplication.problems.Arrays;
 
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
  public class ArrayRotation {
     public static void main(String[] args) {
         int[] input = {8, 3, -4, 11, 4, 0};
-        int rotateValue = 3;
+        int rotateValue = 1;
 
         for (int index = 0; index < rotateValue; index++) {
             int temp = input[0];

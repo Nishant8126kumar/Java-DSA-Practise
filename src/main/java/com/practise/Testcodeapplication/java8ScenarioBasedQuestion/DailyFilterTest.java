@@ -20,18 +20,17 @@ public class DailyFilterTest {
                 new Course("MCA", "20", 32000D),
                 new Course("BCA", "36", 40000D));
 
-        List<String> mapCourseList=courseList.stream().filter(it->it.getCourseFees()>30000)
-                .map(Course::getCourseName).sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+//        List<String> mapCourseList=courseList.stream().filter(it->it.getCourseFees()>30000)
+//                .map(Course::getCourseName).sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+//
+//        log.info("Map course List :"+mapCourseList);
+//
+//        Map customMap=courseList.stream().collect(Collectors.toMap(Course::getCourseName,Course::getCourseFees));
+//
+//        log.info("Map :"+customMap);
 
-        log.info("Map course List :"+mapCourseList);
-
-        Map customMap=courseList.stream().collect(Collectors.toMap(Course::getCourseName,Course::getCourseFees));
-
-        log.info("Map :"+customMap);
-
-
-
-
+        List<String> list = courseList.stream().map(Course::getCourseFees).map(String::valueOf).collect(Collectors.toList());
+        log.info("List :"+list);
 
 
     }

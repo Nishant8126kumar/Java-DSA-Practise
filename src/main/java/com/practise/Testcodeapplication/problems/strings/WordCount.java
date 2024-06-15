@@ -18,7 +18,7 @@ public class WordCount {
 //                });
 
         Arrays.stream(str).sorted().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-                .entrySet().forEach(k -> System.out.println(k.getKey() +"-"+k.getValue()));
+                .forEach((key, value) -> System.out.println(key + "-" + value));
 
     }
 }

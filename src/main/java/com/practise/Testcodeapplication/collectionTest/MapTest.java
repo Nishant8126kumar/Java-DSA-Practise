@@ -50,5 +50,7 @@ public class MapTest {
         log.info("HashMap :"+hashMap);
         log.info("TreeMap :"+treeMap);
         log.info("LinkedHash Map :"+linkedHashMap);
+
+
     }
 }
